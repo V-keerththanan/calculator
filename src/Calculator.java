@@ -22,7 +22,7 @@ class OwnCalculator{
 public class Calculator {
     public static void main(String[] args) {
         int selection;
-        Double number1, number2, result;
+        double number1, number2, result;
         int checker;
         OwnCalculator casio=new OwnCalculator();
 
@@ -42,7 +42,7 @@ public class Calculator {
             System.out.println("Enter second number");
             number2 = in.nextDouble();
 
-            switch (selection) {
+            switch(selection) {
 
                 case 1:
                     result = casio.sum(number1, number2);
@@ -51,7 +51,7 @@ public class Calculator {
 
 
                 case 2:
-                    result = casio.sub(number1, number2);;
+                    result = casio.sub(number1, number2);
                     System.out.println(number1 + " - " + number2 + " : " + result);
                     break;
 
